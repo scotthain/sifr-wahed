@@ -1,7 +1,12 @@
 steps:
   - label: doing things
     commands:
-      - ls -la
+      - uname -a
     plugins:
       docker#v1.1.1:
         image: centos:7
+
+  - label: doing MORE
+    commands:
+      - uname -a
+      
