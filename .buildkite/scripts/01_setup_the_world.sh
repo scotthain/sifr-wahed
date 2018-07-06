@@ -76,4 +76,4 @@ chmod -v a+wt $LFS/sources
 cp /workdir/.buildkite/scripts/* /tmp/
 chown lfs:lfs /tmp/*.sh
 
-su - lfs -c './tmp/02_run_lfs_setup.sh'
+su - lfs -c '/tmp/02_run_lfs_setup.sh'
