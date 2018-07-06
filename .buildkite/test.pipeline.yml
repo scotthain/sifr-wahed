@@ -4,4 +4,4 @@ steps:
       - .buildkite/scripts/01_setup_the_world.sh
     plugins:
       docker#v1.1.1:
-        image: centos:7      
+        image: centos:7
