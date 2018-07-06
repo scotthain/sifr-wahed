@@ -61,3 +61,18 @@ rm -f dummy.c dummy
 EOF
 
 bash version-check.sh
+
+export LFS=/mnt/lfs
+mkdir -pv $LFS
+mkdir -v $LFS/sources
+mkdir -v $LFS/tools
+ln -sv $LFS/tools /
+groupadd lfs
+useradd -s /bin/bash -g lfs -m -k /dev/null lfs
+#passwd lfs only for user run version
+chown -v lfs $LFS/tools
+chmod -v a+wt $LFS/sources
+
+su - lfs
+
+pwd
