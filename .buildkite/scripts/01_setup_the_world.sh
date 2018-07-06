@@ -73,7 +73,7 @@ useradd -s /bin/bash -g lfs -m -k /dev/null lfs
 chown -v lfs $LFS/tools
 chmod -v a+wt $LFS/sources
 
-su --pty --login lfs
-
-id
 pwd
+
+
+# su - lfs -c './path/02_run_lfs_setup.sh'
