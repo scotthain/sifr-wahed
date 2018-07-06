@@ -73,7 +73,7 @@ useradd -s /bin/bash -g lfs -m -k /dev/null lfs
 chown -v lfs $LFS/tools
 chmod -v a+wt $LFS/sources
 
-pwd
+cp /workdir/.buildkite/scripts/* /tmp/
+chown lfs:lfs /tmp/*.sh
 
-
-# su - lfs -c './path/02_run_lfs_setup.sh'
+su - lfs -c './tmp/02_run_lfs_setup.sh'
