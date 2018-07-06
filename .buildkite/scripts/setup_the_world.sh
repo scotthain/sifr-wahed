@@ -73,6 +73,5 @@ useradd -s /bin/bash -g lfs -m -k /dev/null lfs
 chown -v lfs $LFS/tools
 chmod -v a+wt $LFS/sources
 
-su - lfs
-
-pwd
+id
+who
