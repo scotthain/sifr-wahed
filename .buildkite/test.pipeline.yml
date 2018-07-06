@@ -1,0 +1,7 @@
+steps:
+  - label: doing things
+    commands:
+      - ls -la
+    plugins:
+      docker#v1.1.1:
+        image: centos/7
