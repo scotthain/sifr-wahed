@@ -1,0 +1,17 @@
+name: build 0hW0n
+on:
+  push:
+    branches: [$default-branch, shain/*]
+  pull_request:
+    branches: [$default-branch]
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: butts
+      run: gcc --version
+    # - name: Install pylint
+    #   run: pip install Pylint
+    # - name: Linting
+    #   run: pylint --recursive=y upgraded_chainsaw/

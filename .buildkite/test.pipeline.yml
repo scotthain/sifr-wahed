@@ -1,6 +1,0 @@
-steps:
-  - label: doing things
-    commands:
-      - .buildkite/scripts/01_setup_the_world.sh
-    agents:
-      queue: shain-test
